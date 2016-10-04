@@ -60,6 +60,7 @@
     <Compile Include="ShieldedInvader.cs" />
     <Compile Include="SniperTower.cs" />
     <Compile Include="StrongInvader.cs" />
+    <Compile Include="SuperInvader.cs" />
     <Compile Include="Tower.cs" />
   </ItemGroup>
   <ItemGroup>
