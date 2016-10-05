@@ -46,6 +46,7 @@
     <Compile Include="BasicInvader.cs" />
     <Compile Include="FastInvader.cs" />
     <Compile Include="IInvader.cs" />
+    <Compile Include="SuperTower.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Invader.cs" />

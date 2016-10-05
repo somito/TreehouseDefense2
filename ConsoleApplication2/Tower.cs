@@ -10,7 +10,7 @@ namespace TreehouseDefense
 
         private static readonly Random _random = new Random();
 
-        private readonly MapLocation _location;
+        protected readonly MapLocation _location;
 
         public Tower(MapLocation location, Path path)
         {
@@ -29,7 +29,7 @@ namespace TreehouseDefense
             return _random.NextDouble() < Accuracy;
         }
 
-        public void FireOnInvaders(IInvader[] invaders)
+        public virtual void FireOnInvaders(IInvader[] invaders)
         {
             foreach (IInvader invader in invaders)
             {

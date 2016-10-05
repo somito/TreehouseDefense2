@@ -20,7 +20,7 @@ namespace TreehouseDefense
             }
             else
             {
-                System.Console.WriteLine("Shot at a shielded invader but it sustained no damage.");
+                Console.WriteLine("Shot at a super invader but it sustained no damage.");
             }
         }
 

@@ -33,7 +33,7 @@ namespace TreehouseDefense
 
                 Tower[] towers = {
                 new LongRangeTower(new MapLocation(1, 3, map), path),
-                new Tower(new MapLocation(3, 3, map), path),
+                new SuperTower(new MapLocation(3, 3, map), path),
                 new SniperTower(new MapLocation(5, 3, map), path)
             };
 
