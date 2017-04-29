@@ -25,7 +25,28 @@ namespace TreehouseDefense.Tests
         [Fact()]
         public void DistanceToTest()
         {
-            Assert.True(false, "This test needs an implementation");
+
+            var point = new Point(3, 4);
+            var target = new Point(0, 0);
+
+            var expected = 5.0;
+
+            var actual = target.DistanceTo(point);
+
+            Assert.Equal(actual, expected, 2);
+        }
+
+        [Fact()]
+        public void DistanceToPointAtSamePosition()
+        {
+            var point = new Point(3, 4);
+            var target = new Point(3, 4);
+
+            var expected = 0.0;
+
+            var actual = target.DistanceTo(point);
+
+            Assert.Equal(actual, expected, 2);
         }
 
     }
