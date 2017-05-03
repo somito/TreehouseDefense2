@@ -2,12 +2,11 @@
 
 namespace TreehouseDefense.Tests
 {
-
-
     
     public class PathTests
     {
         private Map _map3x3;
+
         private MapLocation[] _pathLocations3;
         private Path _path3;
 

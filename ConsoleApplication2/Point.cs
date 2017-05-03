@@ -28,7 +28,7 @@ namespace TreehouseDefense
 
             Point that = obj as Point;
 
-            return this.X == that.X && this.Y == that.Y;
+            return that != null && this.X == that.X && this.Y == that.Y;
         }
 
         public override int GetHashCode()
