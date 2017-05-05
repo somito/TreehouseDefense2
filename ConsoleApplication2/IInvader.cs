@@ -2,18 +2,18 @@
 
 namespace TreehouseDefense
 {
-    interface IMappable
+    public interface IMappable
     {
         MapLocation Location { get; }
     }
 
-    interface IMoveable
+    public interface IMoveable
     {
         void Move();
     }
 
 
-    interface IInvader : IMappable, IMoveable
+    public interface IInvader : IMappable, IMoveable
     {
         int Health { get; }
 

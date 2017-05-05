@@ -8,7 +8,7 @@ namespace TreehouseDefense
         protected override int Range { get; } = 3;
         protected override int Power { get; } = 2;
 
-        public SuperTower(MapLocation location, Path path) : base(location, path)
+        public SuperTower(MapLocation location) : base(location)
         { }
 
         public override void FireOnInvaders(IInvader[] invaders)

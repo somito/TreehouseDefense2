@@ -2,31 +2,27 @@
 
 namespace TreehouseDefense
 {
-    class Tower
+    public class Tower
     {
         protected virtual int Range { get; } = 1;
         protected virtual int Power { get; } = 1;
-        protected virtual double Accuracy { get; } = .75;
+        protected virtual double Accuracy { get; } = 1;
 
         private static readonly Random _random = new Random();
 
         protected readonly MapLocation _location;
 
-        public Tower(MapLocation location, Path path)
+        public Tower(MapLocation location)
         {
             _location = location;
-
-            if (path.OnPath(_location))
-            {
-                throw new TowerOnPathException(_location.X + "," + _location.Y + " is on the path, tower cannot be placed here.");
-            }
         }
 
         
 
         public bool IsSuccessfulShot()
         {
-            return _random.NextDouble() < Accuracy;
+            //return _random.NextDouble() < Accuracy;
+            return true;
         }
 
         public virtual void FireOnInvaders(IInvader[] invaders)
@@ -49,7 +45,6 @@ namespace TreehouseDefense
                     {
                         Console.WriteLine("Shot at and missed an invader.");
                     }
-                    break;
                 }
             }
         }

@@ -4,7 +4,7 @@
     {
         protected override double Accuracy { get; } = .90;
 
-        public SniperTower(MapLocation location, Path path) : base(location, path)
+        public SniperTower(MapLocation location) : base(location)
         { }
     }
 }
